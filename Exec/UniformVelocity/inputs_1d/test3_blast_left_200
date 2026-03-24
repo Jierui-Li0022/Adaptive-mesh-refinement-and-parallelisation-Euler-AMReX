@@ -1,0 +1,38 @@
+max_step = 1000000
+stop_time = 0.012
+
+geometry.is_periodic =  0  0
+geometry.coord_sys   =  0
+geometry.prob_lo     =  0.0  0.0
+geometry.prob_hi     =  1.0  1.0
+amr.n_cell = 200 4
+
+adv.cfl            = 0.9
+
+adv.v              = 1
+amr.v              = 1
+
+amr.max_level       = 0
+amr.ref_ratio       = 2 2 2 2
+amr.regrid_int      = 2
+amr.blocking_factor = 4
+amr.max_grid_size   = 64
+
+amr.checkpoint_files_output = 0
+
+amr.plot_file = output_1d/test3_blast_left/200/plt
+amr.plot_file = output_1d/test3_blast_left/200/plt
+amr.plot_int          = 1000000
+
+adv.do_tracers = 0
+
+prob.rhoL = 1.0
+prob.uL   = 0.0
+prob.pL   = 1000.0
+prob.rhoR = 1.0
+prob.uR   = 0.0
+prob.pR   = 0.01
+prob.x0   = 0.5
+
+tagging.phigrad = 0.5
+tagging.max_phigrad_lev = 3
