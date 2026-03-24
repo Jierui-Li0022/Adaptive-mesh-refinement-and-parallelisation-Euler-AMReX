@@ -1,0 +1,6 @@
+CEXE_headers += AmrLevelAdv.H
+CEXE_headers += EulerEquations.H
+CEXE_headers += RiemannSolver.H
+CEXE_headers += Reconstruction.H
+CEXE_headers += Constants.H
+CEXE_sources += AmrLevelAdv.cpp LevelBldAdv.cpp bc_nullfill.cpp Tagging_params.cpp main.cpp
