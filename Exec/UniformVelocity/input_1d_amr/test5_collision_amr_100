@@ -1,0 +1,36 @@
+max_step  = 1000000
+stop_time = 0.035
+
+geometry.is_periodic = 0 0
+geometry.coord_sys   = 0
+geometry.prob_lo     = 0.0  0.0
+geometry.prob_hi     = 1.0  1.0
+amr.n_cell = 100  4
+
+adv.cfl = 0.9
+adv.v = 1
+amr.v = 1
+
+amr.max_level       = 2
+amr.ref_ratio       = 2 2 2 2
+amr.regrid_int      = 2
+amr.blocking_factor = 4
+amr.max_grid_size   = 64
+
+amr.checkpoint_files_output = 0
+amr.plot_file = output_1d/test5_collision/100/plt
+amr.plot_file = output_1d/test5_collision/100/plt
+amr.plot_int          = 1000000
+
+adv.do_tracers = 0
+
+prob.rhoL = 5.99924
+prob.uL   = 19.5975
+prob.pL   = 460.894
+prob.rhoR = 5.99242
+prob.uR   = -6.19633
+prob.pR   = 46.0950
+prob.x0   = 0.4
+
+tagging.phigrad         = 0.01
+tagging.max_phigrad_lev = 3
